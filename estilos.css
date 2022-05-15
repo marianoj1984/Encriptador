@@ -1,0 +1,143 @@
+*{
+font-family: 'Libre Baskerville', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+background-color: #2a7ae4;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #2a7ae4;
+}
+#img-logo{
+    object-fit: contain;
+    max-height: 100px;
+    left: 5%;
+    top: 5%;
+}
+textarea::placeholder{
+    color:#e5e5e5;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+#cuadro-primario{
+    width: 100%;
+    height: 600px;
+    background-color: #2a7ae4;
+    }
+#texto{
+    width: 400px;
+    height: 200px;
+    color: #e5e5e5;
+    font-weight: bold;
+    font-size: 2.5em;
+    background-color: #2a7ae4;
+    border:none;
+    position: absolute;
+    left: 20%;
+    top: 35%;
+}
+#botones{
+    position:absolute;
+    bottom: 5px;
+    left: 17%;
+}
+#boton-encriptar{
+    width: 250px;
+    height: 50px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    background-color: white;
+}
+#boton-desencriptar{
+    width: 250px;
+    height: 50px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    background-color: rgb(23, 23, 143);
+}
+#cuadro-secundario{
+    width: 25%;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    margin-right: 25px;
+
+    text-align: center;
+    color: #2a7ae4;
+    font-size: 2em;
+}
+img{
+    max-width: 70%;
+}
+#img-encrip{
+    margin: 100px  0 0 18px;
+    object-fit: contain;
+}
+.texto-por-defecto{
+    font-size: large;
+}
+.texto-encriptado{
+    width: 70%;   
+    background-color: white;
+    color:#2a7ae4;
+    margin:auto;
+    margin-top: 150px;
+    font-weight:bold;
+    font-size: 1em;
+    text-align: center;
+    display: block;
+}
+.boton-copiar{
+    width: 150px;
+    height: 60px;
+    margin:auto;
+    margin-top: 150px;
+    background-color: #2a7ae4;
+    color:white;
+    border-radius: 10px;
+}
+footer{
+    clear:both;
+    width: 100%;
+    height: 80px;
+    background-color: #2a7ae4;
+    text-align: center;
+    line-height: 80px;
+}
+.invisible{
+    display:none;
+}
+@media all and (min-width:400px) and (max-width: 899px){
+
+    main{
+        flex-direction: column;
+    }
+    #botones{
+        left: 25%;
+        display: flex;
+        flex-direction: column;
+    }
+    #boton-encriptar{
+        width: 150%;
+    }
+    #boton-desencriptar{
+        width: 150%;
+    }
+    #cuadro-secundario{
+        width: 90%;
+        margin:auto;
+        padding-top: 5%;
+    }
+    #img-encrip{
+        display: none;
+    }
+}
+@media all and (min-width: 199px) and (max-width: 399px){
+    
+    #cuadro-primario{
+        height: 900px;
+    }
+}

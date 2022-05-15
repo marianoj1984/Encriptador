@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+    <title>Encriptador Desafia n°1 Alura LATAM</title>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Montserrat:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+</head>
+<body>
+    <header>
+        <div><img id="img-logo" src="logo.png"></div>
+    </header>
+    <main>
+        <div id="cuadro-primario">
+            <textarea id="texto" placeholder="ingrese su texto aqui"></textarea>
+            <div id="botones">
+                <h3 style="color:#e5e5e5">&#10082 sólo letras miúsculas, sin acentos</h3>
+                <button id="boton-encriptar">Encriptar</button>
+                <button id="boton-desencriptar">Desencriptar</button>
+            </div>
+        </div>
+        <div id="cuadro-secundario">
+                <img id="img-encrip" class="texto-por-defecto" src="encriptador.jpg">
+                <h4 class="texto-por-defecto" style="background-color:white">NINGÚN MENSAJE FUE ENCONTRADO</h4>
+                <h5 class="texto-por-defecto" style="background-color:white">Ingrese el texto que desea encriptar o desencriptar</h5>
+        </div>
+        
+    </main>
+    <footer id="footer">
+        <h3>&#169 Copyrigth Mariano Jerez - 2022</h3>
+    </footer>
+    <script src="encriptar.js"></script>
+</body>
+
+</html>
